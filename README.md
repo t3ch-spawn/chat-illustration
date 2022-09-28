@@ -42,7 +42,7 @@ Users should be able to:
 - SASS(Used Visual Studio Code Live Compiler)
 - Flexbox
 - Desktop-first workflow
--Font=> Family:[Rubik](https://fonts.google.com/specimen/Rubik)
+- Font=> Family:[Rubik](https://fonts.google.com/specimen/Rubik)
 
 
 ### What I learned
