@@ -214,6 +214,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1.3rem 1.7rem;
+  cursor: pointer;
 }
 .chat__bubble.payment p {
   display: inline-block;
