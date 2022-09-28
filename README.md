@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/built-this-chat-illustratio-with-sassscss-and-flexbox-9q2__jYT3r
 - Live Site URL: https://glitch1904.github.io/chat-illustration/
 
 ## My process
