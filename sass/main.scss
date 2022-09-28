@@ -39,7 +39,7 @@ body {
 }
 .bg-2 {
   position: absolute;
-  background-color: $Light-Grayish-Violet-2;
+  background-color: $Very-Light-Magenta;
   height: 80%;
   width: 50rem;
   bottom: 0;
@@ -95,6 +95,7 @@ main {
   .chat {
     width: 100%;
     margin: auto;
+    box-shadow: 0 0.5rem 2rem 0.5rem rgba(black, 0.15);
   }
 
   .typography {

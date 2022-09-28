@@ -89,6 +89,7 @@
   max-width: 35rem;
   position: relative;
   margin: auto;
+  box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.15);
 }
 .chat__notch {
   position: absolute;
@@ -376,7 +377,7 @@ body {
 
 .bg-2 {
   position: absolute;
-  background-color: hsl(270deg, 20%, 90%);
+  background-color: hsl(289deg, 100%, 72%);
   height: 80%;
   width: 50rem;
   bottom: 0;
@@ -426,6 +427,7 @@ main > div:not(:last-child) {
   .chat {
     width: 100%;
     margin: auto;
+    box-shadow: 0 0.5rem 2rem 0.5rem rgba(0, 0, 0, 0.15);
   }
   .typography {
     width: 100%;
