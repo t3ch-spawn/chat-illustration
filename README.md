@@ -67,7 +67,7 @@ To see how you can add code snippets, see below:
     transform: translateX(0rem);
   }
 }
-
+```
 
 ### Useful resources
 -https://fontawesome.com/ - This helped me with using external icons. I really liked this pattern and will use it going forward.
