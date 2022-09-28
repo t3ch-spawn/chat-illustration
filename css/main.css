@@ -1,82 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-@-webkit-keyframes moveFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(3rem);
-  }
-  40% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-@keyframes moveFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(3rem);
-  }
-  40% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-@-webkit-keyframes moveFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-3rem);
-  }
-  40% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-@keyframes moveFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-3rem);
-  }
-  40% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-@-webkit-keyframes moveFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  40% {
-    transform: translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-@keyframes moveFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  40% {
-    transform: translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
 .device {
   position: relative;
   margin-top: 2rem;
@@ -228,11 +150,12 @@
 .chat__bubble.payment .text-1 > *:not(:last-child) {
   margin-right: 1rem;
 }
-.chat__bubble.payment .text-1 div {
+.chat__bubble.payment .text-1 > div {
   height: 1.8rem;
   width: 1.8rem;
   border-radius: 50%;
   border: 2px solid hsl(289deg, 100%, 72%);
+  position: relative;
 }
 .chat__bubble.payment .text-2 {
   font-size: 1.8rem;
@@ -282,6 +205,26 @@
 }
 .chat__send__button i {
   color: white;
+}
+
+.payment__radio {
+  display: none;
+}
+.payment__radio--button {
+  position: absolute;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.payment__radio:checked ~ div .payment__radio--button {
+  opacity: 1;
 }
 
 .one {

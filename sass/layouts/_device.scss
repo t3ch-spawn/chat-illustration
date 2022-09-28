@@ -172,11 +172,13 @@
           margin-right: 1rem;
         }
 
-        div {
+        // radio button
+        & > div {
           height: 1.8rem;
           width: 1.8rem;
           border-radius: 50%;
           border: 2px solid $Very-Light-Magenta;
+          position: relative;
         }
       }
 
@@ -231,6 +233,28 @@
       }
     }
   }
+}
+
+// FUNCTIONALITY OF RADIO BUTTONS
+.payment__radio {
+  display: none;
+
+  &--button {
+    position: absolute;
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.payment__radio:checked ~ div .payment__radio--button {
+  opacity: 1;
 }
 
 // animation-delayssss
