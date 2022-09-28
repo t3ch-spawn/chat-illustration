@@ -102,7 +102,7 @@
   border-radius: 1.5rem;
 }
 .chat__header {
-  background-image: linear-gradient(to right, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+  background-image: linear-gradient(to right, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
   width: 100%;
   display: flex;
   justify-content: flex-start;
