@@ -1,0 +1,265 @@
+.device {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.chat {
+  background-color: white;
+  border-radius: 3.5rem;
+  padding: 1.5rem;
+  max-width: 35rem;
+  position: relative;
+  margin: auto;
+
+  &__notch {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    width: 50%;
+    height: 3.3rem;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 1.5rem;
+  }
+
+  // styling the header of the chat app
+  &__header {
+    background-image: linear-gradient(to right, $Light-Magenta, $Light-Violet);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    z-index: 4;
+    position: sticky;
+
+    & > *:not(:last-child) {
+      padding: 2rem 0 2rem 2rem;
+      margin-right: 1.5rem;
+    }
+
+    &__avatar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > *:not(:last-child) {
+        margin-right: 0.8rem;
+      }
+
+      img {
+        height: 3.5rem;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      i {
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+
+    &__recipient {
+      h3,
+      p {
+        display: block;
+        margin: 0;
+        color: white;
+      }
+
+      h3 {
+        font-size: 400;
+      }
+
+      p {
+        margin-top: 0.4rem;
+        color: $Pale-Violet;
+      }
+    }
+  }
+
+  &__main {
+    background-color: $Light-Grayish-Violet;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+    margin-top: -1rem;
+    overflow: hidden;
+  }
+
+  // styling of all bubbles
+  &__bubble {
+    padding: 1rem;
+    border-radius: 1.2rem;
+    max-width: 80%;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    // styling of pics bubble
+    &.pics {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      max-width: 90%;
+
+      img {
+        height: 6rem;
+        border-radius: 1.4rem;
+      }
+
+      img:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    // styling of text bubbles
+    &--right {
+      align-self: flex-end;
+      border-bottom-right-radius: 0.5rem;
+      color: $Desaturated-Dark-Violet;
+      background-color: white;
+      animation: moveFromRight 0.5s;
+      animation-fill-mode: backwards;
+    }
+    &--left {
+      align-self: flex-start;
+      border-bottom-left-radius: 0.5rem;
+      color: $Moderate-Violet;
+      background-color: $Light-Grayish-Violet-2;
+      animation: moveFromLeft 0.5s;
+      animation-fill-mode: backwards;
+    }
+
+    // styling of payment bubbles
+    &.payment {
+      max-width: 100%;
+      background-image: linear-gradient(
+        to right,
+        $Light-Magenta,
+        $Light-Violet
+      );
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.3rem 1.7rem;
+
+      p {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .text-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2.5rem;
+
+        & > *:not(:last-child) {
+          margin-right: 1rem;
+        }
+
+        div {
+          height: 1.8rem;
+          width: 1.8rem;
+          border-radius: 50%;
+          border: 2px solid $Very-Light-Magenta;
+        }
+      }
+
+      .text-2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  // styling of input element
+  &__send {
+    width: 100%;
+    position: relative;
+    animation: moveFromBottom 0.5s;
+    animation-fill-mode: backwards;
+
+    input {
+      width: 100%;
+      border-radius: 10rem;
+      margin-top: 2rem;
+      border: none;
+      height: 5rem;
+      padding: 1.5rem 2rem;
+      color: $Very-Dark-Desaturated-Violet;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $Grayish-Blue;
+      }
+    }
+
+    // styling of send button
+    &__button {
+      position: absolute;
+      height: 3.5rem;
+      width: 3.5rem;
+      background-color: $Very-Dark-Desaturated-Violet;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0.8rem;
+      right: 0.8rem;
+      cursor: pointer;
+
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+// animation-delayssss
+
+.one {
+  animation-delay: 1s;
+}
+
+.two {
+  animation-delay: 2s;
+}
+.three {
+  animation-delay: 3s;
+}
+.four {
+  animation-delay: 4s;
+}
+.five {
+  animation-delay: 5s;
+}
+.six {
+  animation-delay: 6s;
+}
+.seven {
+  animation-delay: 7s;
+}
+.eight {
+  animation-delay: 8s;
+}
+
+.nine {
+  animation-delay: 9s;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FONT-AWESOME-KIT-LINK!! -->
+    <script
+      src="https://kit.fontawesome.com/20fa27540b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-1"></div>
+    <div class="bg-2"></div>
+
+    <main>
+      <!-- DIV RESPONSIBLE FOR THE DISPLAYED DEVICE -->
+      <div class="device">
+        <div class="chat">
+          <div class="chat__notch"></div>
+          <!-- Top of the chat showing avatar and recipient of the messages -->
+          <div class="chat__header">
+            <span class="chat__header__avatar">
+              <i class="fa-solid fa-chevron-left"></i>
+
+              <img src="./images/avatar.jpg" alt="" />
+            </span>
+
+            <span class="chat__header__recipient">
+              <h3>Samuel Green</h3>
+
+              <p>Available to Walk</p>
+            </span>
+          </div>
+
+          <!-- Beginning of chat -->
+          <div class="chat__main">
+            <div class="chat__bubble text chat__bubble--left one">
+              That sounds great. I’d be happy to discuss more.
+            </div>
+
+            <div class="chat__bubble text chat__bubble--left two">
+              Could you send over some pictures of your dog, please?
+            </div>
+
+            <div class="chat__bubble pics chat__bubble--right three">
+              <img src="./images/dog-image-1.jpg" alt="" />
+              <img src="./images/dog-image-2.jpg" alt="" />
+              <img src="./images/dog-image-3.jpg" alt="" />
+            </div>
+
+            <div class="chat__bubble text chat__bubble--right four">
+              Here are a few pictures. She’s a happy girl!
+            </div>
+
+            <div class="chat__bubble text chat__bubble--right five">
+              Can you make it?
+            </div>
+
+            <div class="chat__bubble text chat__bubble--left six">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </div>
+
+            <div class="chat__bubble payment chat__bubble--left seven">
+              <span class="text-1">
+                <!-- small circle on the left -->
+                <div></div>
+                <p>30 minute walk</p></span
+              >
+              <span class="text-2">$29</span>
+            </div>
+            <div class="chat__bubble payment chat__bubble--left eight">
+              <span class="text-1">
+                <!-- small circle on the left -->
+                <div></div>
+                <p>1 hour walk</p></span
+              >
+              <span class="text-2"> <p>$49</p></span>
+            </div>
+
+            <div class="chat__send nine">
+              <div class="chat__send__button">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+
+              <input type="text" placeholder="Type a message…" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIV RESPONSIBLE FOR TEXT WITH HEADER "SIMPLE BOOKING" -->
+      <div class="typography">
+        <h2>Simple booking</h2>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Boluwatife Olusanya</a>.
+    </div>
+  </body>
+</html>

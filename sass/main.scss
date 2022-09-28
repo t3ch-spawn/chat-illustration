@@ -1,0 +1,111 @@
+@import "abstracts/animations";
+@import "abstracts/variables";
+@import "layouts/device";
+@import "layouts/typography";
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //1rem is 10px
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $Light-Grayish-Violet;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-1 {
+  position: absolute;
+  background-image: linear-gradient(to right, $Light-Magenta, $Light-Violet);
+  height: 80%;
+  width: 50rem;
+  top: 0;
+  left: -12%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.bg-2 {
+  position: absolute;
+  background-color: $Light-Grayish-Violet-2;
+  height: 80%;
+  width: 50rem;
+  bottom: 0;
+  right: -12%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: -3;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 3rem;
+
+  & > div:not(:last-child) {
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .typography {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: auto;
+    width: fit-content;
+    overflow-x: hidden;
+    padding: 3rem;
+  }
+
+  .bg-1,
+  .bg-2 {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+
+    & > div:not(:last-child) {
+      margin-right: 0rem;
+    }
+  }
+
+  .chat {
+    width: 100%;
+    margin: auto;
+  }
+
+  .typography {
+    width: 100%;
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
